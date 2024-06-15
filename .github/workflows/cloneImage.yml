@@ -12,7 +12,7 @@ on:
     branches: [ "dev" ]
 
   # Allows you to run this workflow manually from the Actions tab
-  # 允许您从“操作”选项卡手动运行此工作流
+  # 允许您从“操作”选项卡手动运行此工作流(只允许对默认分支手动执行)
   workflow_dispatch:
     inputs:
       log_Level:
@@ -51,6 +51,7 @@ jobs:
           echo "Log level: ${{ vars.FOO }}"
           echo "Tags: ${{ vars.FOO }}"
           echo "Environment: $DESCRIPTION"
+          echo "INPUT_LOG_LEVEL: $INPUT_LOG_LEVEL"
           #docker info
           #npm -v
           pwd
