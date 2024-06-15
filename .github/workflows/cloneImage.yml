@@ -14,7 +14,12 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   # 允许您从“操作”选项卡手动运行此工作流
   workflow_dispatch:
-    #inputs:
+    inputs:
+      log_Level:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: string
       #environment:
         #description: 'Environment to run tests against'
         #type: environment
@@ -22,6 +27,7 @@ on:
 env:
   NAME: "env_name"
   env_var: ${{ vars.ENV_CONTEXT_VAR }}
+  INPUT_LOG_LEVEL: ${{ github.event.inputs.log_Level }}
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -44,7 +50,7 @@ jobs:
         run: |
           echo "Log level: ${{ vars.FOO }}"
           echo "Tags: ${{ vars.FOO }}"
-          echo "Environment: $ENVIRONMENT"
+          echo "Environment: $DESCRIPTION"
           #docker info
           #npm -v
           pwd
@@ -52,5 +58,5 @@ jobs:
         env:
           #LEVEL: ${{ inputs.logLevel }}
           #TAGS: ${{ inputs.tags }}
-          ENVIRONMENT: ${{ vars.ENVIRONMENT }}
+          DESCRIPTION: ${{ vars.DESCRIPTION }}
           
