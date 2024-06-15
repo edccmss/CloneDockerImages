@@ -41,14 +41,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
+          #echo "Log level: $LEVEL"
+          #echo "Tags: $TAGS"
           echo "Environment: $ENVIRONMENT"
           docker info
           npm -v
           pwd
         env:
-          LEVEL: ${{ inputs.logLevel }}
-          TAGS: ${{ inputs.tags }}
+          #LEVEL: ${{ inputs.logLevel }}
+          #TAGS: ${{ inputs.tags }}
           ENVIRONMENT: ${{ inputs.environment }}
           
