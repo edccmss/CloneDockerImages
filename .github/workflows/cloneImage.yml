@@ -45,7 +45,7 @@ jobs:
           echo "Tags: $TAGS"
           echo "Environment: $ENVIRONMENT"
           docker info
-          npm -V
+          npm -v
           pwd
         env:
           LEVEL: ${{ inputs.logLevel }}
