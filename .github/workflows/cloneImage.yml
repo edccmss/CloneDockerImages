@@ -80,7 +80,7 @@ jobs:
           do
             export ImageName=$(echo $item | awk -F / '{print $NF}')
             IM=$(echo $item | awk -F / '{print $NF}')
-            echo "image_name1:$IM,2${IM},3${{IM}},ImageName:\${ImageName}"
+            echo "image_name1:$IM,2${IM},ImageName:\${ImageName}"
             echo "准备推送 $item 镜像"
             export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/\$ImageName
             docker  tag  $item    \$NewImageName
