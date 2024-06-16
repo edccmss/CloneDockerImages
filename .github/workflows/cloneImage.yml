@@ -75,7 +75,7 @@ jobs:
 
       - name: Change image name and push
         run: |
-          echo ${{ secrets.HUB_PSW }} | docker login ${{ vars.REGISTRY }} -u ${{ vars.HUB_USER }} --password-stdin
+          echo ${{ secrets.HUB_PWD }} | docker login ${{ vars.REGISTRY }} -u ${{ vars.HUB_USER }} --password-stdin
           for item in $(cat images)
           do
             ImageName=$(echo $ImageName | awk -F / '{print $NF}')
