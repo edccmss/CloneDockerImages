@@ -79,8 +79,8 @@ jobs:
           for item in $(cat images)
           do
             export ImageName=$(echo $ImageName | awk -F / '{print $NF}')
-            image-name=$((echo $ImageName | awk -F / '{print $NF}'))
-            echo "image_name1:$image-name,2${image-name},3${{ image-name }},ImageName:\${ImageName}"
+            imagename=$((echo $ImageName | awk -F / '{print $NF}'))
+            echo "image_name1:$imagename,2${imagename},3${{ imagename }},ImageName:\${ImageName}"
             echo "准备推送 $item 镜像"
             export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/\$ImageName
             docker  tag  $item    \$NewImageName
