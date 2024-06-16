@@ -78,8 +78,8 @@ jobs:
           echo ${{ secrets.HUB_PWD }} | docker login ${{ vars.REGISTRY }} -u ${{ vars.HUB_USER }} --password-stdin
           for item in $(cat images)
           do
-            export ImageName=$(echo $ImageName | awk -F / '{print $NF}')
-            IM=$((echo $ImageName | awk -F / '{print $NF}'))
+            export ImageName=$(echo $item | awk -F / '{print $NF}')
+            IM=$((echo $item | awk -F / '{print $NF}'))
             echo "image_name1:$IM,2${IM},3${{ IM }},ImageName:\${ImageName}"
             echo "准备推送 $item 镜像"
             export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/\$ImageName
