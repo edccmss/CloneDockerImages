@@ -79,14 +79,14 @@ jobs:
           for item in $(cat images)
           do
             export ImageName=$(echo $item | awk -F / '{print $NF}')
-            IM=$(echo $item | awk -F / '{print $NF}')
-            echo "image_name1:$IM,2${IM},ImageName:\${ImageName}"
+            #IM=$(echo $item | awk -F / '{print $NF}')
+            echo "image_name1:$IM,2${IM},ImageName:${ImageName}"
             echo "准备推送 $item 镜像"
-            export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/\$ImageName
-            docker  tag  $item    \$NewImageName
-            docker push \$NewImageName
+            export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/$ImageName
+            docker  tag  $item    $NewImageName
+            docker push $NewImageName
             if [ $? -ne 0 ];then
-              echo "镜像 \$NewImageName 推送失败"
+              echo "镜像 $NewImageName 推送失败"
               echo $item |sed "s#\/#\\\\\\\/#"|xargs -L1 bash -c 'sed -i "/$0/d" images'
             fi
           done
