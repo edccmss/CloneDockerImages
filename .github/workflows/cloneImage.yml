@@ -36,8 +36,8 @@ jobs:
           for item in $(cat images)
           do
             export ImageName=$(echo $item | awk -F / '{print $NF}')
-            echo "准备推送 $item 镜像"
             export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/$ImageName
+            echo "准备推送镜像: $NewImageName "
             docker  tag  $item    $NewImageName
             docker push $NewImageName
             if [ $? -ne 0 ];then
