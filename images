@@ -1,1 +1,1 @@
-prodrigestivill/postgres-backup-local:14
+docker pull frolvlad/alpine-glibc:latest
