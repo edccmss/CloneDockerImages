@@ -1,1 +1,1 @@
-docker pull frolvlad/alpine-glibc:latest
+frolvlad/alpine-glibc:latest
