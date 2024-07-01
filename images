@@ -1,5 +1,1 @@
-redis:6.2.14
-apache/kafka:3.7.0
-provectuslabs/kafka-ui:v0.7.2
-bitnami/mysql:8.0.36
-quay.io/coreos/etcd:v3.4.13
+debian:12.5
