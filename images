@@ -1,1 +1,4 @@
-debian:12.5
+openems/edge:2024.7.0
+openems/ui-backend:2024.7.0
+openems/backend:2024.7.0
+openems/ui-edge:2024.7.0
