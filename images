@@ -1,1 +1,1 @@
-docker.elastic.co/logstash/logstash:7.17.10
+docker.io/bitnami/kafka:3.7
