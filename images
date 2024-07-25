@@ -1,2 +1,1 @@
-bitnami/kafka:3.4.1
-dushixiang/kafka-map:v1.3.3
+docker.elastic.co/logstash/logstash:7.17.10
