@@ -1,3 +1,2 @@
-docker.elastic.co/beats/filebeat:8.14.3
-grafana/loki:2.9.2
-grafana/promtail:2.9.2
+docker.elastic.co/elasticsearch/elasticsearch:8.14.3
+docker.elastic.co/kibana/kibana:8.14.3
