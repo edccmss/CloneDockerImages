@@ -1,1 +1,1 @@
-jenkins/jenkins:2.479.1-lts-jdk17
+jenkins/ssh-agent:latest-debian-jdk17
