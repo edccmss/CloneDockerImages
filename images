@@ -1,1 +1,1 @@
-nginx:1.26.2
+bitnami/mysql:8.0.40
