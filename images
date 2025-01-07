@@ -1,3 +1,5 @@
-jumpserver/core:v2.28.8
-jumpserver/koko:v2.28.8
-jumpserver/lion:v2.28.8
+jumpserver/mariadb:10.6
+jumpserver/mysql:5.7
+jumpserver/redis:6.2
+jumpserver/magnus:v2.28.8
+jumpserver/web:v2.28.8
