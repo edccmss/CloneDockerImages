@@ -1,1 +1,1 @@
-ghcr.io/immich-app/immich-machine-learning:v1.125.7
+docker pull snowdreamtech/frpc:0.61
