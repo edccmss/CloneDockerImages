@@ -1,1 +1,1 @@
-nvidia/cuda:12.8.0-base-ubuntu22.04
+nvcr.io/nvidia/pytorch:24.02-py3
