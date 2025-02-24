@@ -1,4 +1,1 @@
-myscale/myscaledb:1.6.4
-docker.elastic.co/elasticsearch/elasticsearch:8.14.3
-docker.elastic.co/kibana/kibana:8.14.3
-downloads.unstructured.io/unstructured-io/unstructured-api:latest
+xhongc/music_tag_web:2.3.5
