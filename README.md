@@ -1,3 +1,3 @@
 # dockerImages
 clone docker image
-registry.cn-shengzhen.aliyuncs.com/edccmss/IMAGE_NAME:{TAG}
+registry.cn-guangzhou.aliyuncs.com/edccmss/IMAGE_NAME:{TAG}
