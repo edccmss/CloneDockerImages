@@ -1,1 +1,2 @@
-docker.elastic.co/elasticsearch/elasticsearch:8.17.3
+elasticsearch:7.17.28
+kibana:7.17.28
