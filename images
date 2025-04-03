@@ -1,1 +1,3 @@
-istio/proxyv2:1.23.5
+kubesphere/openelb-controller:v0.6.0
+kubesphere/openelb-speaker:v0.6.0
+registry.k8s.io/ingress-nginx/kube-webhook-certgen:v1.1.1
