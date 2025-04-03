@@ -1,1 +1,1 @@
-istio/pilot:1.23.5
+docker.io/istio/proxyv2:1.23.5
