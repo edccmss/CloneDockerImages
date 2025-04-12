@@ -1,1 +1,1 @@
-mysql:8.0.33
+docker.io/istio/pilot:1.24.3
