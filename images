@@ -1,3 +1,1 @@
-influxdb:2.2
-ghcr.io/analogj/scrutiny:master-web
-ghcr.io/analogj/scrutiny:master-collector
+ghcr.io/analogj/scrutiny:master-omnibus
