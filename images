@@ -1,1 +1,3 @@
-langhuihui/monibuca:v5
+influxdb:2.2
+ghcr.io/analogj/scrutiny:master-web
+ghcr.io/analogj/scrutiny:master-collector
