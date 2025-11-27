@@ -1,2 +1,1 @@
-golang:1.24
-alpine:3
+calico/apiserver:v3.26.0
