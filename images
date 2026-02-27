@@ -1,1 +1,1 @@
-docker pull emqx/emqx:6.1.1
+emqx/emqx:6.1.1
