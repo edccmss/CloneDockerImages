@@ -1,4 +1,2 @@
-docker.elastic.co/elasticsearch/elasticsearch:7.17.10
-docker.elastic.co/logstash/logstash:7.17.10
-docker.elastic.co/kibana/kibana:7.17.10
-docker.elastic.co/beats/filebeat:7.17.10
+adminer:5.4.2
+postgres:9.6.5
