@@ -1,34 +1,10 @@
-busybox:latest
-langgenius/dify-api:1.14.2
-langgenius/dify-api:1.14.2
-langgenius/dify-api:1.14.2
-langgenius/dify-api:1.14.2
-langgenius/dify-web:1.14.2
-postgres:15-alpine
-mysql:8.0
-redis:6-alpine
-langgenius/dify-sandbox:0.2.15
-langgenius/dify-plugin-daemon:0.6.1-local
-ubuntu/squid:latest
-certbot/certbot
-nginx:latest
-semitechnologies/weaviate:1.27.0
-oceanbase/oceanbase-ce:4.3.5-lts
-oceanbase/seekdb:latest
-langgenius/qdrant:v1.8.3
-pgvector/pgvector:pg16
-tensorchord/pgvecto-rs:pg16-v0.3.0
-ghcr.io/chroma-core/chroma:0.5.20
-containers.intersystems.com/intersystems/iris-community:2025.3
-container-registry.oracle.com/database/free:latest
-quay.io/coreos/etcd:v3.5.5
-minio/minio:RELEASE.2023-03-20T20-16-18Z
-milvusdb/milvus:v2.6.3
-opensearchproject/opensearch:latest
-opensearchproject/opensearch-dashboards:latest
-opengauss/opengauss:7.0.0-RC1
-myscale/myscaledb:1.6.4
-matrixorigin/matrixone:2.1.1
-docker.elastic.co/elasticsearch/elasticsearch:8.14.3
-docker.elastic.co/kibana/kibana:8.14.3
-downloads.unstructured.io/unstructured-io/unstructured-api:latest
+postgres:15-alpine                                                                                                                                                
+langgenius/dify-api:1.14.2                                                                                                                                       4.2s 
+semitechnologies/weaviate:1.27.0                                                                                                                              4.2s 
+busybox:latest                                                                                                                                                   4.2s 
+langgenius/dify-plugin-daemon:0.6.1-local                                                                                                                       4.2s 
+redis:6-alpine                                                                                                                                                   4.2s 
+ubuntu/squid:latest                                                                                                                                            4.2s 
+nginx:latest                                                                                                                                                    4.2s 
+langgenius/dify-sandbox:0.2.15                                                                                                                                    
+langgenius/dify-web:1.14.2 
