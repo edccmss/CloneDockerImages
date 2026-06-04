@@ -17,7 +17,6 @@ oceanbase/oceanbase-ce:4.3.5-lts
 oceanbase/seekdb:latest
 langgenius/qdrant:v1.8.3
 pgvector/pgvector:pg16
-vastdata/vastbase-vector
 tensorchord/pgvecto-rs:pg16-v0.3.0
 ghcr.io/chroma-core/chroma:0.5.20
 containers.intersystems.com/intersystems/iris-community:2025.3
