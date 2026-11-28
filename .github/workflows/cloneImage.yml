@@ -32,11 +32,11 @@ jobs:
 
       - name: Change image name and push
         run: |
-          echo ${{ secrets.HUB_PWD }} | docker login ${{ vars.REGISTRY }} -u ${{ vars.HUB_USER }} --password-stdin
+          echo ${{ secrets.HUB_PWD_TC }} | docker login ${{ vars.REGISTRY_TC }} -u ${{ vars.HUB_USER_TC }} --password-stdin
           for item in $(cat images)
           do
             export ImageName=$(echo $item | awk -F / '{print $NF}')
-            export NewImageName=${{ vars.REGISTRY }}/${{ vars.NAMESPACE }}/$ImageName
+            export NewImageName=${{ vars.REGISTRY_TC }}/${{ vars.NAMESPACE }}/$ImageName
             echo "准备推送镜像: $NewImageName "
             docker  tag  $item    $NewImageName
             docker push $NewImageName
